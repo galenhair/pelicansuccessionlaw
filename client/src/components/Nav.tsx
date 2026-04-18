@@ -10,6 +10,7 @@ const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663214443274/6Ment
 const navLinks = [
   { label: "How It Works", href: "/how-it-works" },
   { label: "Pricing", href: "/pricing" },
+  { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/faq" },
   { label: "About", href: "/about" },
 ];

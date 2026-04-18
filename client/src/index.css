@@ -186,4 +186,109 @@
     text-transform: uppercase;
     color: oklch(0.72 0.12 75);
   }
+
+  /* Blog article markdown content */
+  .blog-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: oklch(0.97 0.01 80);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid oklch(1 0 0 / 10%);
+  }
+  .blog-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: oklch(0.90 0.02 80);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .blog-content h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: oklch(0.72 0.12 75);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .blog-content p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.85;
+    color: oklch(0.70 0.02 240);
+    margin-bottom: 1.25rem;
+  }
+  .blog-content strong {
+    color: oklch(0.90 0.01 80);
+    font-weight: 600;
+  }
+  .blog-content ul, .blog-content ol {
+    font-family: 'DM Sans', sans-serif;
+    color: oklch(0.70 0.02 240);
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.85;
+  }
+  .blog-content li {
+    margin-bottom: 0.4rem;
+  }
+  .blog-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+  }
+  .blog-content thead tr {
+    background: oklch(0.14 0.04 240);
+  }
+  .blog-content th {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: oklch(0.72 0.12 75);
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid oklch(0.72 0.12 75 / 0.3);
+  }
+  .blog-content td {
+    padding: 0.75rem 1rem;
+    color: oklch(0.70 0.02 240);
+    border-bottom: 1px solid oklch(1 0 0 / 8%);
+  }
+  .blog-content tbody tr:hover td {
+    background: oklch(0.22 0.04 240);
+  }
+  .blog-content blockquote {
+    border-left: 3px solid oklch(0.72 0.12 75);
+    padding: 0.75rem 1.25rem;
+    margin: 1.5rem 0;
+    background: oklch(0.16 0.04 240);
+    font-style: italic;
+    color: oklch(0.72 0.12 75);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+  }
+  .blog-content a {
+    color: oklch(0.72 0.12 75);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .blog-content a:hover {
+    color: oklch(0.85 0.10 75);
+  }
+  .blog-content hr {
+    border: none;
+    border-top: 1px solid oklch(1 0 0 / 10%);
+    margin: 2rem 0;
+  }
+  .font-mono-brand {
+    font-family: 'DM Mono', monospace;
+  }
 }
