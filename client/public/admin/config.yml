@@ -1,0 +1,134 @@
+# Pelican Succession Law — Decap CMS Configuration
+# Admin panel: https://pelicanlaw-6mentmy2.manus.space/admin
+# Backend: GitHub repo galenhair/pelicansuccessionlaw
+
+backend:
+  name: github
+  repo: galenhair/pelicansuccessionlaw
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+# Where media files will be stored in the repo
+media_folder: "client/public/uploads"
+public_folder: "/uploads"
+
+# Show a live preview of the site while editing
+site_url: https://pelicanlaw-6mentmy2.manus.space
+
+# Collections define what content types the editor can manage
+collections:
+
+  # ─── BLOG POSTS ──────────────────────────────────────────────────────────────
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "client/src/content/blog"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} — {{category}} ({{publishDate}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string", hint: "The full article headline. Keep it under 60 characters for best SEO." }
+      - { label: "Slug (URL)", name: "slug", widget: "string", hint: "URL-friendly version of the title, e.g. how-to-open-a-succession-in-louisiana. Use lowercase with hyphens only." }
+      - { label: "Publish Date", name: "publishDate", widget: "string", hint: "e.g. May 2025" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "The Process"
+          - "Louisiana Law"
+          - "Pricing & Costs"
+          - "Real Estate"
+          - "Out-of-State Heirs"
+      - { label: "Read Time", name: "readTime", widget: "string", default: "5 min read", hint: "e.g. 5 min read" }
+      - { label: "SEO Meta Title", name: "metaTitle", widget: "string", hint: "Appears in Google search results. Keep under 60 characters." }
+      - { label: "SEO Meta Description", name: "metaDescription", widget: "string", hint: "Appears under the title in Google. Keep under 155 characters." }
+      - { label: "Excerpt (Summary)", name: "excerpt", widget: "text", hint: "1-2 sentence summary shown on the blog index page and in search results." }
+      - { label: "Article Content", name: "body", widget: "markdown", hint: "Full article content. Use the toolbar to add headings, bold text, lists, and links." }
+
+  # ─── FAQ ─────────────────────────────────────────────────────────────────────
+  - name: "faq"
+    label: "FAQ Questions"
+    label_singular: "FAQ Question"
+    folder: "client/src/content/faq"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{question}}"
+    fields:
+      - { label: "Question", name: "question", widget: "string" }
+      - { label: "Answer", name: "answer", widget: "markdown" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "The Process"
+          - "Costs & Pricing"
+          - "Louisiana Law"
+          - "Documents"
+          - "Timeline"
+      - { label: "Order (lower = first)", name: "order", widget: "number", default: 99 }
+
+  # ─── HOME PAGE COPY ──────────────────────────────────────────────────────────
+  - name: "pages"
+    label: "Page Copy"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "client/src/content/pages/home.md"
+        fields:
+          - { label: "Hero Headline Line 1", name: "heroLine1", widget: "string", default: "Your Family Deserves" }
+          - { label: "Hero Headline Line 2 (Gold)", name: "heroLine2", widget: "string", default: "Clarity." }
+          - { label: "Hero Headline Line 3", name: "heroLine3", widget: "string", default: "Not Confusion." }
+          - { label: "Hero Subheadline", name: "heroSubheadline", widget: "text" }
+          - { label: "Stat 1 — Number", name: "stat1Number", widget: "string", default: "14" }
+          - { label: "Stat 1 — Label", name: "stat1Label", widget: "string", default: "Avg. Close Time" }
+          - { label: "Stat 1 — Unit", name: "stat1Unit", widget: "string", default: "days" }
+          - { label: "Stat 2 — Number", name: "stat2Number", widget: "string", default: "100" }
+          - { label: "Stat 2 — Label", name: "stat2Label", widget: "string", default: "Flat-Fee Pricing" }
+          - { label: "Stat 2 — Unit", name: "stat2Unit", widget: "string", default: "%" }
+          - { label: "Why Pelican — Quote", name: "whyQuote", widget: "text" }
+
+      - label: "About Page"
+        name: "about"
+        file: "client/src/content/pages/about.md"
+        fields:
+          - { label: "Page Headline", name: "headline", widget: "string" }
+          - { label: "Firm Story (Main Body)", name: "body", widget: "markdown" }
+          - { label: "Attorney Name", name: "attorneyName", widget: "string" }
+          - { label: "Attorney Title", name: "attorneyTitle", widget: "string" }
+          - { label: "Attorney Bio", name: "attorneyBio", widget: "markdown" }
+
+      - label: "Pricing Page"
+        name: "pricing"
+        file: "client/src/content/pages/pricing.md"
+        fields:
+          - { label: "Page Headline", name: "headline", widget: "string" }
+          - { label: "Page Subheadline", name: "subheadline", widget: "text" }
+          - { label: "Tier 1 — Name", name: "tier1Name", widget: "string", default: "Simple Succession" }
+          - { label: "Tier 1 — Price", name: "tier1Price", widget: "string", default: "$2,500" }
+          - { label: "Tier 1 — Description", name: "tier1Description", widget: "text" }
+          - { label: "Tier 2 — Name", name: "tier2Name", widget: "string", default: "Standard Succession" }
+          - { label: "Tier 2 — Price", name: "tier2Price", widget: "string", default: "$3,500 – $4,500" }
+          - { label: "Tier 2 — Description", name: "tier2Description", widget: "text" }
+          - { label: "Tier 3 — Name", name: "tier3Name", widget: "string", default: "Complex Succession" }
+          - { label: "Tier 3 — Price", name: "tier3Price", widget: "string", default: "Starting at $5,000" }
+          - { label: "Tier 3 — Description", name: "tier3Description", widget: "text" }
+
+  # ─── SITE SETTINGS ───────────────────────────────────────────────────────────
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Contact & Firm Info"
+        name: "contact"
+        file: "client/src/content/settings/contact.md"
+        fields:
+          - { label: "Firm Name", name: "firmName", widget: "string", default: "Pelican Succession Law" }
+          - { label: "Phone Number", name: "phone", widget: "string", hint: "e.g. (504) 555-0100" }
+          - { label: "Email Address", name: "email", widget: "string" }
+          - { label: "Office Address Line 1", name: "address1", widget: "string" }
+          - { label: "Office Address Line 2 (City, State, ZIP)", name: "address2", widget: "string" }
+          - { label: "Google Maps Link", name: "mapsLink", widget: "string" }
+          - { label: "Google Business Profile URL", name: "googleProfile", widget: "string" }
+          - { label: "Footer Disclaimer", name: "footerDisclaimer", widget: "text", hint: "The small legal disclaimer text at the bottom of every page." }
