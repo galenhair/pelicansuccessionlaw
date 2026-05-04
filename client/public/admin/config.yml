@@ -3,11 +3,11 @@
 # Backend: GitHub repo galenhair/pelicansuccessionlaw
 
 backend:
-  name: github
-  repo: galenhair/pelicansuccessionlaw
+  name: git-gateway
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
+
+# Netlify Identity site URL
+local_backend: false
 
 # Where media files will be stored in the repo
 media_folder: "client/public/uploads"
