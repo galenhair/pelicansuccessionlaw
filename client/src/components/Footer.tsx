@@ -67,14 +67,17 @@ export default function Footer() {
             <div className="section-label mb-5">Contact</div>
             <ul className="space-y-3 text-sm" style={{ color: "oklch(0.65 0.02 240)", fontFamily: "'DM Sans', sans-serif" }}>
               <li>
-                <a href="tel:+15555555555" className="hover:text-[oklch(0.72_0.12_75)] transition-colors">
-                  (555) 555-5555
+                <a href="tel:+16174290809" className="hover:text-[oklch(0.72_0.12_75)] transition-colors">
+                  (617) 429-0809
                 </a>
               </li>
               <li>
-                <a href="mailto:info@pelicansuccessionslaw.com" className="hover:text-[oklch(0.72_0.12_75)] transition-colors">
-                  info@pelicansuccessionslaw.com
+                <a href="mailto:hair@hstalaw.com" className="hover:text-[oklch(0.72_0.12_75)] transition-colors">
+                  hair@hstalaw.com
                 </a>
+              </li>
+              <li className="mt-2" style={{ color: "oklch(0.55 0.02 240)" }}>
+                3001 17th Street<br />Metairie, LA 70002
               </li>
               <li className="mt-4">
                 <Link href="/contact" className="btn-gold rounded-none text-xs">

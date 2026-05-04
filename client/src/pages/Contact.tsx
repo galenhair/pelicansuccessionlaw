@@ -220,15 +220,24 @@ export default function Contact() {
                     <div className="space-y-4 text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                       <div>
                         <div style={{ color: "oklch(0.50 0.02 240)", marginBottom: "0.25rem" }}>Phone</div>
-                        <a href="tel:+15555555555" className="text-base font-medium" style={{ color: "oklch(0.97 0.01 80)" }}>
-                          (555) 555-5555
+                        <a href="tel:+16174290809" className="text-base font-medium" style={{ color: "oklch(0.97 0.01 80)" }}>
+                          (617) 429-0809
                         </a>
                       </div>
                       <div>
                         <div style={{ color: "oklch(0.50 0.02 240)", marginBottom: "0.25rem" }}>Email</div>
-                        <a href="mailto:info@pelicansuccessionslaw.com" className="text-base" style={{ color: "oklch(0.97 0.01 80)" }}>
-                          info@pelicansuccessionslaw.com
+                        <a href="mailto:hair@hstalaw.com" className="text-base" style={{ color: "oklch(0.97 0.01 80)" }}>
+                          hair@hstalaw.com
                         </a>
+                      </div>
+                      <div>
+                        <div style={{ color: "oklch(0.50 0.02 240)", marginBottom: "0.25rem" }}>Office</div>
+                        <div style={{ color: "oklch(0.97 0.01 80)" }}>3001 17th Street</div>
+                        <div className="text-xs mt-0.5" style={{ color: "oklch(0.55 0.02 240)" }}>Metairie, LA 70002</div>
+                      </div>
+                      <div>
+                        <div style={{ color: "oklch(0.50 0.02 240)", marginBottom: "0.25rem" }}>Attorney</div>
+                        <div style={{ color: "oklch(0.97 0.01 80)" }}>Galen Hair</div>
                       </div>
                       <div>
                         <div style={{ color: "oklch(0.50 0.02 240)", marginBottom: "0.25rem" }}>Service Area</div>
