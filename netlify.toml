@@ -1,0 +1,17 @@
+[build]
+  command = "pnpm run build"
+  publish = "dist/public"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Handle SPA routing — all routes serve index.html
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
