@@ -54,6 +54,8 @@ const labelStyle = {
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -67,10 +69,35 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, this would connect to a form service (Jotform, Typeform, or backend)
-    setSubmitted(true);
+    setSubmitting(true);
+    setError("");
+    try {
+      const res = await fetch("https://formspree.io/f/xpwzgvqb", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          parish: form.parish,
+          situation: form.situation,
+          message: form.message,
+          _subject: `New Succession Inquiry from ${form.name}`,
+          _replyto: form.email,
+        }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError("There was a problem submitting your request. Please call us directly at (617) 429-0809.");
+      }
+    } catch {
+      setError("There was a problem submitting your request. Please call us directly at (617) 429-0809.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -180,9 +207,15 @@ export default function Contact() {
                       />
                     </div>
 
-                    <button type="submit" className="btn-gold rounded-none w-full py-4 text-base">
-                      Submit for a Free Quote
+                    <button type="submit" disabled={submitting} className="btn-gold rounded-none w-full py-4 text-base" style={{ opacity: submitting ? 0.7 : 1, cursor: submitting ? "wait" : "pointer" }}>
+                      {submitting ? "Submitting..." : "Submit for a Free Quote"}
                     </button>
+
+                    {error && (
+                      <p className="text-sm text-center p-3" style={{ color: "oklch(0.75 0.18 25)", background: "oklch(0.75 0.18 25 / 0.1)", border: "1px solid oklch(0.75 0.18 25 / 0.3)", fontFamily: "'DM Sans', sans-serif" }}>
+                        {error}
+                      </p>
+                    )}
 
                     <p className="text-xs text-center" style={{ color: "oklch(0.45 0.02 240)", fontFamily: "'DM Sans', sans-serif" }}>
                       By submitting this form, you agree to be contacted by Pelican Succession Law. No attorney-client relationship is formed until a written engagement letter is signed.

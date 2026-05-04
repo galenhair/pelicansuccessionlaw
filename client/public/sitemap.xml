@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core Pages -->
+  <url>
+    <loc>https://pelicansuccessionslaw.com/</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/how-it-works</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/pricing</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/faq</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/about</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/contact</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/resources</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Index -->
+  <url>
+    <loc>https://pelicansuccessionslaw.com/blog</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://pelicansuccessionslaw.com/blog/how-to-open-succession-louisiana</loc>
+    <lastmod>2025-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/blog/louisiana-forced-heirship-explained</loc>
+    <lastmod>2025-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/blog/louisiana-small-succession-affidavit</loc>
+    <lastmod>2025-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/blog/louisiana-usufruct-naked-ownership-explained</loc>
+    <lastmod>2025-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/blog/out-of-state-heir-louisiana-succession</loc>
+    <lastmod>2025-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/blog/louisiana-succession-with-will-vs-without</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/blog/louisiana-community-property-succession</loc>
+    <lastmod>2025-02-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/blog/how-much-does-louisiana-succession-cost</loc>
+    <lastmod>2025-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/blog/stalled-real-estate-closing-louisiana-succession</loc>
+    <lastmod>2025-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pelicansuccessionslaw.com/blog/louisiana-succession-documents-checklist</loc>
+    <lastmod>2025-02-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Lead Magnet -->
+  <url>
+    <loc>https://pelicansuccessionslaw.com/resources/after-death-checklist</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
