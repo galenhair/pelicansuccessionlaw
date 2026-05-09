@@ -88,6 +88,8 @@ const faqs = [
   },
 ];
 
+const FAQ_HERO = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663214443274/gpwjlPmPyMWWAFep.jpg";
+
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -95,7 +97,8 @@ export default function FAQ() {
     <div className="min-h-screen" style={{ background: "oklch(0.18 0.04 240)" }}>
       <Nav />
 
-      <div className="pt-32 pb-16" style={{ background: "oklch(0.14 0.04 240)", borderBottom: "1px solid oklch(1 0 0 / 8%)" }}>
+      <div className="pt-32 pb-16 relative overflow-hidden" style={{ background: "oklch(0.14 0.04 240)", borderBottom: "1px solid oklch(1 0 0 / 8%)" }}>
+        <div className="absolute inset-0" style={{ backgroundImage: `url(${FAQ_HERO})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.15 }} />
         <div className="container">
           <div className="section-label mb-4">Frequently Asked Questions</div>
           <h1 className="font-display font-bold mb-4" style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)", color: "oklch(0.97 0.01 80)" }}>

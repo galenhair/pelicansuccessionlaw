@@ -59,7 +59,10 @@ export default function BlogPost() {
       <Nav />
 
       {/* Article Header */}
-      <div className="pt-32 pb-12" style={{ background: "oklch(0.14 0.04 240)", borderBottom: "1px solid oklch(1 0 0 / 8%)" }}>
+      <div className="pt-32 pb-12 relative overflow-hidden" style={{ background: "oklch(0.14 0.04 240)", borderBottom: "1px solid oklch(1 0 0 / 8%)" }}>
+        {post.featuredImage && (
+          <div className="absolute inset-0" style={{ backgroundImage: `url(${post.featuredImage})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.15 }} />
+        )}
         <div className="container max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
             <Link href="/blog">

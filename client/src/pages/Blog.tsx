@@ -91,19 +91,22 @@ export default function Blog() {
                   className="grid grid-cols-1 lg:grid-cols-2 gap-0 mb-12 group cursor-pointer"
                   style={{ border: "1px solid oklch(1 0 0 / 10%)" }}
                 >
-                  {/* Featured image placeholder */}
+                  {/* Featured image */}
                   <div
-                    className="h-64 lg:h-auto min-h-48 flex items-end p-8"
+                    className="h-64 lg:h-auto min-h-48 flex items-end p-8 relative overflow-hidden"
                     style={{
-                      background: "linear-gradient(135deg, oklch(0.22 0.04 240) 0%, oklch(0.16 0.05 230) 100%)",
+                      backgroundImage: `url(${featured.featuredImage})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
                       borderRight: "1px solid oklch(1 0 0 / 8%)",
                     }}
                   >
-                    <div>
+                    <div className="absolute inset-0" style={{ background: "linear-gradient(to top, oklch(0.14 0.04 240 / 0.85) 0%, oklch(0.14 0.04 240 / 0.3) 60%, transparent 100%)" }} />
+                    <div className="relative z-10">
                       <div className="section-label mb-2">Featured Article</div>
                       <div
                         className="font-mono-brand text-xs tracking-widest uppercase"
-                        style={{ color: "oklch(0.55 0.02 240)" }}
+                        style={{ color: "oklch(0.75 0.02 240)" }}
                       >
                         {featured.category} · {featured.readTime}
                       </div>
@@ -153,8 +156,18 @@ export default function Blog() {
                       border: "1px solid oklch(1 0 0 / 10%)",
                     }}
                   >
-                    {/* Card top accent */}
-                    <div style={{ height: "3px", background: "oklch(0.72 0.12 75 / 0.3)" }} />
+                    {/* Card featured image */}
+                    <div
+                      className="relative overflow-hidden"
+                      style={{ height: "180px" }}
+                    >
+                      <img
+                        src={post.featuredImage}
+                        alt={post.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0" style={{ background: "linear-gradient(to top, oklch(0.14 0.04 240 / 0.6) 0%, transparent 60%)" }} />
+                    </div>
                     <div className="p-7 flex flex-col flex-1">
                       <div className="flex items-center justify-between mb-4">
                         <span

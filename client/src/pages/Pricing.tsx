@@ -95,12 +95,15 @@ const notIncluded = [
   "Notary fees for your Verification signature (typically $25–$75)",
 ];
 
+const PRICING_HERO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663214443274/6MentMy2qiahWXwqpq7d89/pricing-hero-key-iPctSfRFVepke6BiiF9qdw.png";
+
 export default function Pricing() {
   return (
     <div className="min-h-screen" style={{ background: "oklch(0.18 0.04 240)" }}>
       <Nav />
 
-      <div className="pt-32 pb-16" style={{ background: "oklch(0.14 0.04 240)", borderBottom: "1px solid oklch(1 0 0 / 8%)" }}>
+      <div className="pt-32 pb-16 relative overflow-hidden" style={{ background: "oklch(0.14 0.04 240)", borderBottom: "1px solid oklch(1 0 0 / 8%)" }}>
+        <div className="absolute inset-0" style={{ backgroundImage: `url(${PRICING_HERO})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.12 }} />
         <div className="container">
           <div className="section-label mb-4">Transparent Pricing</div>
           <h1 className="font-display font-bold mb-4" style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)", color: "oklch(0.97 0.01 80)" }}>

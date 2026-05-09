@@ -8,7 +8,7 @@ import { Link } from "wouter";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663214443274/6MentMy2qiahWXwqpq7d89/pelican_hero_bg-jJrWcZpLPq8iaMGfy5UUMM.webp";
+const HERO_BG = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663214443274/xPebTPWMNMTjlVqE.jpg";
 
 // Animated counter hook
 function useCountUp(target: number, duration = 1800, start = false) {

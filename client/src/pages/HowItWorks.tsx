@@ -82,6 +82,8 @@ const steps = [
   },
 ];
 
+const HOW_HERO = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663214443274/zEPaxNhYwUanLaEx.jpg";
+
 export default function HowItWorks() {
   return (
     <div className="min-h-screen" style={{ background: "oklch(0.18 0.04 240)" }}>
@@ -89,9 +91,10 @@ export default function HowItWorks() {
 
       {/* Page Header */}
       <div
-        className="pt-32 pb-16"
+        className="pt-32 pb-16 relative overflow-hidden"
         style={{ background: "oklch(0.14 0.04 240)", borderBottom: "1px solid oklch(1 0 0 / 8%)" }}
       >
+        <div className="absolute inset-0" style={{ backgroundImage: `url(${HOW_HERO})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.15 }} />
         <div className="container">
           <div className="section-label mb-4">The Process</div>
           <h1

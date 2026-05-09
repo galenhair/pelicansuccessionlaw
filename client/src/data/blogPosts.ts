@@ -12,6 +12,7 @@ export interface BlogPost {
   readTime: string;
   publishDate: string;
   excerpt: string;
+  featuredImage: string;
   content: string; // Markdown-formatted content
 }
 
@@ -24,6 +25,7 @@ export const blogPosts: BlogPost[] = [
     category: "The Process",
     readTime: "8 min read",
     publishDate: "April 10, 2025",
+    featuredImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663214443274/WijAKTTZWFKRoTdI.jpg",
     excerpt: "Opening a succession in Louisiana is different from probate in every other state. Here is exactly what the process looks like, step by step — from the death certificate to the Judgment of Possession.",
     content: `
 ## What Is a Louisiana Succession?
@@ -133,6 +135,7 @@ If you need to open a Louisiana succession, contact Pelican Succession Law for a
     category: "Louisiana Law",
     readTime: "7 min read",
     publishDate: "April 3, 2025",
+    featuredImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663214443274/NZEKFebJOBZlrBFa.jpg",
     excerpt: "Louisiana is the only state in the United States with forced heirship laws — a concept inherited from French and Spanish civil law that requires parents to leave a portion of their estate to certain children, regardless of what the will says.",
     content: `
 ## What Is Forced Heirship?
@@ -221,6 +224,7 @@ Forced heirship analysis requires deep familiarity with Louisiana's civil law sy
     category: "The Process",
     readTime: "6 min read",
     publishDate: "March 27, 2025",
+    featuredImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663214443274/oMaMVRWeoRbnsAVT.jpg",
     excerpt: "If the estate is small enough, Louisiana law allows heirs to transfer assets without going to court at all. Here is how the Small Succession Affidavit works — and the critical mistakes families make when using it.",
     content: `
 ## What Is the Louisiana Small Succession Affidavit?
@@ -312,6 +316,7 @@ Not sure whether your situation qualifies for the Small Succession Affidavit? Co
     category: "Louisiana Law",
     readTime: "7 min read",
     publishDate: "March 20, 2025",
+    featuredImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663214443274/ZeWqKvEZVkEUXTMZ.jpg",
     excerpt: "When a Louisiana spouse dies without a will, the surviving spouse typically receives usufruct — the right to use and enjoy the property — while the children receive naked ownership. Here is what that means in practice.",
     content: `
 ## What Is Usufruct?
@@ -410,6 +415,7 @@ Usufruct and naked ownership are among the most misunderstood concepts in Louisi
     category: "Out-of-State Heirs",
     readTime: "6 min read",
     publishDate: "March 13, 2025",
+    featuredImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663214443274/nbYyPkrIUmexTxGr.jpg",
     excerpt: "If you live in Texas, Florida, Georgia, or anywhere outside Louisiana and inherited property in the state, you need a Louisiana succession — and you can handle the entire process remotely without ever setting foot in a courtroom.",
     content: `
 ## The Problem: Louisiana Property, Out-of-State Heir
@@ -490,6 +496,7 @@ If the deceased owned Louisiana mineral interests, the royalty payments due to t
     category: "The Process",
     readTime: "6 min read",
     publishDate: "March 6, 2025",
+    featuredImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663214443274/6MentMy2qiahWXwqpq7d89/blog-will-vs-no-will-BZmzQ4rFP7wUGF23NbQ9KV.png",
     excerpt: "Whether the deceased left a will or not significantly affects how a Louisiana succession proceeds. Here is a clear breakdown of the differences — and what families need to know in each scenario.",
     content: `
 ## Testate vs. Intestate: The Basic Distinction
@@ -587,6 +594,7 @@ Whether the deceased left a will or not, Pelican Succession Law can handle the s
     category: "Louisiana Law",
     readTime: "7 min read",
     publishDate: "February 27, 2025",
+    featuredImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663214443274/eoGhFVuZtYIemepQ.jpg",
     excerpt: "Louisiana's community property rules are among the most misunderstood aspects of succession law. Understanding what is community property — and what is not — is essential to getting the succession right.",
     content: `
 ## Louisiana as a Community Property State
@@ -681,6 +689,7 @@ Community property analysis is one of the most technically demanding aspects of 
     category: "Pricing & Costs",
     readTime: "5 min read",
     publishDate: "February 20, 2025",
+    featuredImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663214443274/rzFIpSnLEyggSKzy.jpg",
     excerpt: "Louisiana succession costs vary widely depending on the firm you hire and how they bill. Here is an honest breakdown of every cost involved — and why flat-fee pricing is almost always better for families.",
     content: `
 ## The Real Cost of a Louisiana Succession
@@ -781,6 +790,7 @@ Contact Pelican Succession Law for a free consultation and a flat-fee quote with
     category: "Real Estate",
     readTime: "5 min read",
     publishDate: "February 13, 2025",
+    featuredImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663214443274/LviWaBOxnqntJXwi.jpg",
     excerpt: "One of the most common calls we receive is from a real estate agent or title company whose closing is stalled because the seller inherited the property and never completed the succession. Here is exactly what needs to happen — and how fast we can make it happen.",
     content: `
 ## Why Real Estate Closings Stall Over Successions
@@ -853,6 +863,7 @@ If your closing is stalled, call us today. We will assess the situation, provide
     category: "The Process",
     readTime: "5 min read",
     publishDate: "February 6, 2025",
+    featuredImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663214443274/lWXHpMtATkfBnFzB.jpg",
     excerpt: "The most common cause of succession delays is missing documents. Here is a complete checklist of everything you need to gather before contacting a succession attorney — so you can hit the ground running.",
     content: `
 ## Why Document Preparation Matters
